@@ -11,9 +11,23 @@ RUN apt-get update && apt-get install -y \
     git \
     python3-pip \
     python3-dev \
-    gettext
+    gettext \
+    huffman \
+    cascadetoml \
+    jinja2 \
+    typer==0.4.0 \
+    sh \
+    click==8.0.4 \
+    cpp-coveralls \
+    requests \
+    requests-cache \
+    polib \
+    pyyaml \
+    intelhex \
+    pyelftools \
+    adafruit-circuitpython-typing
 
-# Added gettext for Circuitpython
+# Added gettext and after were added for circuitpython
 
 WORKDIR /build
 
