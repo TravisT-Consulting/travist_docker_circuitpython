@@ -11,7 +11,9 @@ RUN apt-get update && apt-get install -y \
     git \
     python3-pip \
     python3-dev \
-    gettext \
+    gettext
+
+run pip3 install \
     huffman \
     cascadetoml \
     jinja2 \
@@ -27,7 +29,7 @@ RUN apt-get update && apt-get install -y \
     pyelftools \
     adafruit-circuitpython-typing
 
-# Added gettext and after were added for circuitpython
+# Added gettext and python dependancies for CirciutPython
 
 WORKDIR /build
 
