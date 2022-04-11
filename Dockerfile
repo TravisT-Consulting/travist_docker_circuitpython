@@ -40,5 +40,5 @@ RUN make -C circuitpython/mpy-cross/
 RUN make -C circuitpython/ports/unix/
 
 # Bootloader
-RUN git clone --recurse-submodules https://github.com/adafruit/uf2-samdx1.git
+RUN git clone https://github.com/adafruit/uf2-samdx1.git
 RUN git -C uf2-samdx1 checkout v3.14.0
