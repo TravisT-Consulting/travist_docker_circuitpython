@@ -7,7 +7,7 @@ WORKDIR /build
 
 # Circuitpython
 RUN git clone --recurse-submodules https://github.com/adafruit/circuitpython.git
-RUN git -C circuitpython checkout 7.3.0-beta.1
+RUN git -C circuitpython checkout 7.3.1
 RUN make -C circuitpython/mpy-cross/
 RUN make -C circuitpython/ports/unix/
 
